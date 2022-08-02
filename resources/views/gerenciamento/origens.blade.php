@@ -2,128 +2,140 @@
 
 @section('content')
 
-
-  <!-- Layout wrapper -->
-<div class="layout-wrapper layout-content-navbar">
-    <div class="layout-container">
-      <!-- / Layout page -->
-        <div class="layout-page">
-          <!-- Content wrapper -->
-            <div class="content-wrapper">
-                <div class="container-xxl flex-grow-1 container-p-y">
-                    <div class="row">
-                        <!-- Painel Pendencias-->
-                        <div class="col-6">
-                        <div class="card">
-                            <h5 class="card-header">Pendencias</h5>
-                            <div class="table">
-                            <table class="table table-striped table-hover">
-                                <thead>
-                                <tr>
-                                <th>---</th>
-                                <th>Venc.</th>
-                                <th>Hoje</th>
-                                <th>Mes</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr> 
-                                    <td>Atualização Pendente</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>  
-                                </tr>
-                                <tr> 
-                                    <td>Aprovação Pendente</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>  
-                                </tr>
-                                <tr> 
-                                    <td>Envio de Documentos Pendente</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>  
-                                </tr>
-                                <tr> 
-                                    <td>Pagamento Pendente</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>  
-                                </tr>
-                                <tr> 
-                                    <td>Entradas Pendentes</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>  
-                                </tr>
-                                <tr> 
-                                    <td>Auditorias Entrada Pendentes</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>  
-                                </tr>
-                                <tr> 
-                                    <td>Auditorias Saida Pendentes</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td> 
-                                </tr>                  
-                                </tbody>
-                                <tfoot>
-                                
-                                </tfoot>
-                            </table>
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Origens</h1>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+    <div class="content">
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <h5>Filtros:</h5>
+                        </h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body row">
+                        <div class="d-flex">
+                            <div class="col-6 mb-3">
+                            <label for="exampleFormControlSelect1" class="form-label">Status:</label>
+                            <select class="form-control" aria-label="Default select example">
+                                <option selected>Selecione um Status</option>
+                                <option value="1">Ativo</option>
+                                <option value="2">Inativo</option>
+                            </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                            <label for="exampleFormControlSelect1" class="form-label">Tipo:</label>
+                            <select class="form-control" aria-label="Default select example">
+                                <option selected>Selecione um Tipo</option>
+                                <option value="Entrada/Saida">Entrada/Saida</option>
+                                <option value="1">Entrada</option>
+                                <option value="2">Saida</option>
+                            </select>
+                            </div>
+                            <div class="col-6 mb-3">
+                            <label class="form-label">Atividade</label>
+                            <select class="form-control" aria-label="Default select example">
+                                <option value="33">2222</option>
+                            </select>
                             </div>
                         </div>
-                    </div>
-                    <!-- Painel Faturamento-->
-                    <div class="col-6">
-                        <div class="card">
-                            <h5 class="card-header">Faturamento em Mãos</h5>                    
-                                <div class="table">                     
-                                <table class="table table-striped table-hover">
-                                    <thead>
-                                    <tr>
-                                    <th>---</th>
-                                    <th>Valor</th>
-                                    <th>Aporte</th>
-                                    <th>Retirada</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    
-                                    <tr> 
-                                        <td>Forma de Pagamento</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>  
-                                    </tr> 
-                                        
-                                    </tbody>
-                                    <tfoot>
-                                        <td>Total</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                    </tfoot>
-                                </table> 
-                                </div>
+                        </div>
+                    <!-- / card-footer -->
+                    <div class="card-footer">
+                        <div class="mb-1" align="left">
+                            <label class="form-label">
+                                <button class="btn btn-primary">Cadastrar Origem</button>
+                            </label>
+                            <label class="form-label">
+                                <button class="btn btn-primary">Aplicar Filtro</button>
+                            </label>
                         </div>
                     </div>
-                </div>
-            </div>
-                <div class="container-xxl flex-grow-1 container-p-y">
-                    <div class="row">
-                
+                </div>  
+            <!-- /.card -->
+            <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Origens Cadastradas</h3>
+  
+                  <div class="card-tools">
+                    <div class="input-group input-group-sm" style="width: 150px;">
+                      <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+  
+                      <div class="input-group-append">
+                        <button type="submit" class="btn btn-default">
+                          <i class="fas fa-search"></i>
+                        </button>
+                      </div>
                     </div>
+                  </div>
                 </div>
+                <!-- /.card-header -->
+                <div class="card-body table-responsive p-0">
+                  <table class="table table-hover text-nowrap">
+                    <thead>
+                      <tr>
+                        <th>Nome</th>
+                        <th>Status</th>
+                        <th>Meta</th>
+                        <th>Ações</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>183</td>
+                        <td>John Doe</td>
+                        <td>11-7-2014</td>
+                        <td><span class="tag tag-success">Approved</span></td>
+                      </tr>
+                      <tr>
+                        <td>219</td>
+                        <td>Alexander Pierce</td>
+                        <td>11-7-2014</td>
+                        <td><span class="tag tag-warning">Pending</span></td>
+                      </tr>
+                      <tr>
+                        <td>657</td>
+                        <td>Bob Doe</td>
+                        <td>11-7-2014</td>
+                        <td><span class="tag tag-primary">Approved</span></td>
+                      </tr>
+                      <tr>
+                        <td>175</td>
+                        <td>Mike Doe</td>
+                        <td>11-7-2014</td>
+                        <td><span class="tag tag-danger">Denied</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- /.card-body -->
+                </div>
+               <!-- /.card -->
             </div>
-        </div>    
-     <!-- / .Content wrapper -->
-    </div>   
-<!-- / .Layout page -->
-</div>
+            <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    
       
 @endsection
 

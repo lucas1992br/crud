@@ -82,7 +82,7 @@
             <!-- Add icons to the links using the .nav-icon class
                  with font-awesome or any other icon font library -->
                  <li class="nav-item">
-                  <a href="{{ route('origens')}}" class="nav-link">
+                  <a href="#" class="nav-link">
                     Painel
                   </a>
                   </li>
@@ -125,7 +125,7 @@
                   <a href="#" class="nav-link menu-toggle">
                     Gerenciamento
                   </a>
-                  <ul class="nav nav-treeview">
+                <ul class="nav nav-treeview">
                     <li class="nav-item">
                     <a href="/atualizarsaidas" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
@@ -175,9 +175,62 @@
                     </a>
                     </li>
                   </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link menu-toggle">
+                      Cadastros
+                    </a>               
                 </ul>
-            
-          </ul>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                  <a href="{{ route('origens')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                    Origens
+                  </a>
+                  </li>
+                  <li class="nav-item">
+                  <a href="/aprovarsaidas" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    Aprovar Saidas
+                  </a>
+                  </li>
+                  <li class="nav-item">
+                  <a href="/auditoriaentrada" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    Auditoria Entrada
+                  </a>
+                  </li>
+                  <li class="nav-item">
+                  <a href="/auditoriasaida" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    Auditoria Saida
+                  </a>
+                  </li>
+                  <li class="nav-item">
+                  <a href="/enviardocumento" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    Enviar Documento
+                  </a>
+                  </li>
+                   <li class="nav-item">
+                  <a href="/pagamentosaidas" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    Pagamento Saidas
+                  </a>
+                  </li>
+                   <li class="nav-item">
+                  <a href="/efetivarentradas" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    Efetivar entradas
+                  </a>
+                  </li>
+                   <li class="nav-item">
+                  <a href="/chequedevolvido" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    Cheque Devolvido
+                  </a>
+                  </li>
+                </li>
+                </ul>
         </nav>
         <!-- /.sidebar-menu -->
     </div>
